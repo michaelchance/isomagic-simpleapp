@@ -71,7 +71,7 @@
 						next();
 						};
 					},
-				template : function(opts){
+				usetemplate : function(opts){
 					var mwkey = ''
 					if(opts.templateid){
 						mwkey = "template_"+opts.templateid;
