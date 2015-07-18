@@ -24,7 +24,7 @@
 		var templates = {};
 		var r = {
 			tlc : {
-				}
+				},
 			middleware : {
 				showpage : function(req,res,next){
 					// console.log('showpage');
@@ -63,7 +63,7 @@
 						next();
 						}
 					}
-				}
+				},
 			middlewareBuilders : {
 				setdata : function(opts){
 					return function(req,res,next){
