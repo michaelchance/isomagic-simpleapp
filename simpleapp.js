@@ -44,7 +44,7 @@
 					res.$(selector).empty().append(_app.server() ? $view.html() : $view);
 					res.$('[data-app-uri] > div', $view).attr('data-templateid',res.templateid);
 					// console.log('setting handled true');
-					req.handled = true;
+					res.handled = true;
 					next();
 					},
 				checkpage : function(req,res,next){
@@ -78,7 +78,7 @@
 						if(!mwcache[mwkey]){
 							mwcache[mwkey] = function(t){
 								return function(req,res,next){
-									console.log('template '+t);
+									// console.log('template '+t);
 									res.templateid = t; 
 									next();}
 								}(opts.templateid)
