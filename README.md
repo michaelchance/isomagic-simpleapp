@@ -6,6 +6,15 @@ IsoMagic extension that adds simple app capabilities
 uses IsoMagic-template to translate a templateid, from `res.templateid` with data from `res.data`, and apply it to
 the app 'body', specified by the config `bodySelector` option
 
+Setup
+-----
+
+```
+npm install isomagic isomagic-template isomagic-simpleapp
+```
+
+Create your index.js and index.html as described in [IsoMagic](https://github.com/michaelchance/isomagic)
+
 This extension requires [IsoMagic-template](https://github.com/michaelchance/isomagic-template).  For details on template file structure, see that repository.
 
 Sample Config file:
